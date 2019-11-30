@@ -713,11 +713,14 @@ section.about-d{
           width: 100%;
           height: auto;
           border-radius: 0.25rem;
-          transition: all 1s;
+          filter: grayscale(20%);
+          transition: transform 1s, filter 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
         }
 
         &:hover img{
           transform: scale(1.1);
+          filter: grayscale(0%);
         }
         .serv-b3{
           text-decoration: none;
@@ -736,7 +739,108 @@ section.about-d{
     background-image: url("../images/cam6.jpg");
   }
 
+  .proj-ba{
+    padding: calc(100vh/10) calc(100vw/15);
+  }
 
+  .proj-b1{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 80px 0px;
+  }
+.proj-b1a{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+  .proj-b2{
+    position: relative;
+    width: 270px;
+    height: 270px;
+    // border: sienna solid 2px;
+
+    &:hover{
+
+      div:nth-child(1){
+        transform: rotate(0deg);
+        filter: grayscale(0);
+        transform: scale(0.6) translate(-100px, -100px);
+      }
+      div:nth-child(2){
+        transform: rotate(0deg);
+        filter: grayscale(0);
+        transform: scale(0.6) translate(100px,-100px);
+      }
+      div:nth-child(3){
+        filter: grayscale(0);
+        transform: rotate(0deg);
+        transform: scale(0.6) translate(-100px, 100px);
+      }
+      div:nth-child(4){
+        transform: rotate(20deg);
+        filter: grayscale(0);
+        transform: scale(0.6) translate(100px, 100px);
+      }
+      }
+    .proj-b3{
+      position: absolute;
+      top: 10%;
+      left: 11%;
+      height: 200px;
+      width: 200px;
+      overflow: hidden;
+      padding: 1px;
+      box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.25);
+      background-color: white;
+      transition: transform 1.3s, z-index 2s, filter 2s;
+      img{
+        width: 100%;
+        height: auto;
+        border-radius: 2px;
+      }
+    }
+    div:nth-child(1){
+      transform: rotate(-10deg);
+      filter: grayscale(70%);
+    }
+    div:nth-child(2){
+      transform: rotate(10deg);
+      filter: grayscale(70%);
+    }
+    div:nth-child(3){
+      filter: grayscale(70%);
+      transform: rotate(-20deg);
+    }
+    div:nth-child(4){
+      transform: rotate(0deg);
+      // filter: grayscale(40%);
+    }
+  }
+
+  .proj-b4{
+    font-family: "Lato", sans-serif;
+
+    a{
+      .proj-b5{
+        text-align: center;
+        font-size: 30px;
+        color: rgb(107, 107, 107);
+        transition: all 0.5s;
+      }
+      &:hover, &:hover .proj-b5{
+        text-decoration: none;
+        color: rgb(45, 45, 45) !important;
+      }
+      
+    }
+    .proj-b6{
+      text-align: center;
+      color: rgb(107, 107, 107);
+      font-size: 14px;
+      margin-top: -5px;
+    }
+  }
 
 
 

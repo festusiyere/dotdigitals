@@ -121,3 +121,37 @@ slidesToScroll: 1,
 $('.youtube').grtyoutube();
 				
       
+
+function chess (n){
+  const hash = '#', space = ' ', board = [];
+  for(let i = 0; i<n; i++){
+      if(i%2 === 0){
+        for(let j =0; j<n/2; j++){
+          board.push(space);
+          board.push(hash);
+        }
+      } else {
+        for(let j =0; j<n/2; j++){
+          board.push(hash);
+          board.push(space);
+        }
+      }
+      board.push('\n');
+  }
+  console.log(board.join(''))
+}
+chess(10) 
+/*
+' # # # # #
+# # # # # 
+ # # # # #
+# # # # # 
+ # # # # #
+# # # # # 
+ # # # # #
+# # # # # 
+ # # # # #
+# # # # # 
+'
+
+*/

@@ -66,7 +66,58 @@ slidesToScroll: 1,
     }
   ]
 });
-
+// $('.a-d31').slick({
+//   autoplay: false,
+//   infinite: true,
+//   dots: false,
+//   infinite: true,
+//   autoplaySpeed: 1000,
+//   speed: 1000,
+//   slidesToShow: 3,
+//   prevArrow: `<a href="#" class="navigators1 nav-left1">
+//   <i class="fas fa-angle-left" class=""></i>
+// </a>`,
+// nextArrow: `<a href="#" class="navigators1 nav-right1">
+//   <i class="fas fa-angle-right" class=""></i>
+// </a>`,
+// slidesToScroll: 1,
+//   responsive: [
+//     {
+//       breakpoint: 1024,
+//       settings: {
+//         slidesToShow: 3,
+//         dots: false,
+//         slidesToScroll: 1,
+//         infinite: true,
+//         dots: true
+//       }
+//     },
+//     {
+//       breakpoint: 600,
+//       settings: {
+//         autoplay: true,
+//         dots: false,
+//         infinite: true,
+//         autoplaySpeed: 1000,
+//         speed: 3000,      
+//         slidesToShow: 1,
+//         slidesToScroll: 1
+//       }
+//     },
+//     {
+//       breakpoint: 480,
+//       settings: {
+//         dots: false,
+//         autoplay: true,
+//         infinite: true,
+//         autoplaySpeed: 1000,
+//         speed: 3000,      
+//         slidesToShow: 1,
+//         slidesToScroll: 1
+//       }
+//     }
+//   ]
+// });
 $('.youtube').grtyoutube();
 				
       
